@@ -1,0 +1,457 @@
+{
+  "slices": {
+    "components": {
+      "image_gallery": {
+        "library": "slices",
+        "id": "image_gallery",
+        "name": "ImageGallery",
+        "description": "ImageGallery",
+        "model": {
+          "id": "image_gallery",
+          "type": "SharedSlice",
+          "name": "ImageGallery",
+          "description": "ImageGallery",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ImageGallery",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {
+                "image": {
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": [
+                      {
+                        "name": "thumb",
+                        "width": 300,
+                        "height": 300
+                      }
+                    ]
+                  },
+                  "type": "Image"
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "image_gallery",
+            "items": [
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop",
+                  "thumb": {
+                    "dimensions": {
+                      "width": 300,
+                      "height": 300
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=300&h=300&fit=crop"
+                  }
+                }
+              },
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop",
+                  "thumb": {
+                    "dimensions": {
+                      "width": 300,
+                      "height": 300
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=300&h=300&fit=crop"
+                  }
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Matrix seamless convergence",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Non ullamco aliqua culpa quis et cupidatat. Laboris cupidatat deserunt elit minim do mollit reprehenderit irure culpa labore officia pariatur pariatur veniam. Duis cupidatat cupidatat aliqua anim pariatur voluptate ut Lorem.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/mattedwards/Websites/react/next-js/ehd-sm-starter/.slicemachine/assets/slices/ImageGallery/default/preview.png",
+            "width": 800,
+            "height": 795
+          }
+        }
+      },
+      "text_block": {
+        "library": "slices",
+        "id": "text_block",
+        "name": "TextBlock",
+        "description": "TextBlock",
+        "model": {
+          "id": "text_block",
+          "type": "SharedSlice",
+          "name": "TextBlock",
+          "description": "TextBlock",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TextBlock",
+              "primary": {
+                "heading": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Heading",
+                    "placeholder": "Section heading (optional)",
+                    "allowTargetBlank": false,
+                    "single": "heading2,heading3,heading4,heading5,heading6"
+                  }
+                },
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": "Text Content",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "centered",
+              "name": "Centered",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TextBlock",
+              "primary": {
+                "heading": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Heading",
+                    "placeholder": "Section heading (optional)",
+                    "allowTargetBlank": false,
+                    "single": "heading2,heading3,heading4,heading5,heading6"
+                  }
+                },
+                "content": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": "Text Content",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "text_block",
+            "items": [],
+            "primary": {
+              "heading": [
+                {
+                  "type": "heading2",
+                  "text": "Redefine user-centric synergies",
+                  "spans": []
+                }
+              ],
+              "content": [
+                {
+                  "type": "heading2",
+                  "text": "Transition next-generation paradigms",
+                  "spans": []
+                },
+                {
+                  "type": "image",
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Voluptate consequat ea aliqua id velit laboris fugiat ex anim cillum exercitation ut enim ea consequat. Commodo laborum qui adipisicing adipisicing nisi consectetur ad qui.",
+                  "spans": []
+                }
+              ]
+            }
+          },
+          "centered": {
+            "variation": "centered",
+            "name": "Centered",
+            "slice_type": "text_block",
+            "items": [],
+            "primary": {
+              "heading": [
+                {
+                  "type": "heading2",
+                  "text": "Cultivate dynamic metrics",
+                  "spans": []
+                }
+              ],
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "Sint cupidatat id aliqua cupidatat reprehenderit eiusmod nulla enim nostrud proident duis minim sit cupidatat mollit. Occaecat occaecat aute id et laborum. Enim enim veniam velit in sint deserunt nisi velit duis ad consectetur deserunt.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/mattedwards/Websites/react/next-js/ehd-sm-starter/.slicemachine/assets/slices/TextBlock/default/preview.png",
+            "width": 800,
+            "height": 580
+          },
+          "centered": {
+            "path": "/Users/mattedwards/Websites/react/next-js/ehd-sm-starter/.slicemachine/assets/slices/TextBlock/centered/preview.png",
+            "width": 800,
+            "height": 105
+          }
+        }
+      },
+      "text_image": {
+        "library": "slices",
+        "id": "text_image",
+        "name": "TextImage",
+        "description": "TextImage",
+        "model": {
+          "id": "text_image",
+          "type": "SharedSlice",
+          "name": "TextImage",
+          "description": "TextImage",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TextImage",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "mainImage": {
+                  "config": {
+                    "label": "Main Image",
+                    "constraint": {
+                      "width": 600,
+                      "height": 600
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "imageLeft",
+              "name": "Image Left",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TextImage",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "mainImage": {
+                  "config": {
+                    "label": "Main Image",
+                    "constraint": {
+                      "width": 600,
+                      "height": 600
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "text_image",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Morph extensible channels",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Commodo mollit laboris pariatur ipsum.",
+                  "spans": []
+                }
+              ],
+              "mainImage": {
+                "dimensions": {
+                  "width": 600,
+                  "height": 600
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=600&h=600&fit=crop"
+              }
+            }
+          },
+          "imageLeft": {
+            "variation": "imageLeft",
+            "name": "Image Left",
+            "slice_type": "text_image",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Monetize customized experiences",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Laborum aliquip nostrud eiusmod magna consectetur ullamco occaecat Lorem reprehenderit. Eiusmod irure consectetur non eiusmod dolore labore ad aliquip cillum.",
+                  "spans": []
+                }
+              ],
+              "mainImage": {
+                "dimensions": {
+                  "width": 600,
+                  "height": 600
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&h=600&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/mattedwards/Websites/react/next-js/ehd-sm-starter/.slicemachine/assets/slices/TextImage/default/preview.png",
+            "width": 800,
+            "height": 304
+          },
+          "imageLeft": {
+            "path": "/Users/mattedwards/Websites/react/next-js/ehd-sm-starter/.slicemachine/assets/slices/TextImage/imageLeft/preview.png",
+            "width": 800,
+            "height": 304
+          }
+        }
+      }
+    }
+  }
+}

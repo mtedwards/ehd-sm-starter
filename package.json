@@ -10,6 +10,7 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.26",
     "@prismicio/client": "^6.4.2",
     "@prismicio/helpers": "^2.2.1",
     "@prismicio/next": "^0.1.2",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.4",
+    "sass": "^1.50.0",
     "slice-machine-ui": "^0.3.5"
   }
 }

@@ -1,0 +1,64 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "text_image",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Morph extensible channels",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Commodo mollit laboris pariatur ipsum.",
+          "spans": []
+        }
+      ],
+      "mainImage": {
+        "dimensions": {
+          "width": 600,
+          "height": 600
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=600&h=600&fit=crop"
+      }
+    }
+  },
+  {
+    "variation": "imageLeft",
+    "name": "Image Left",
+    "slice_type": "text_image",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Monetize customized experiences",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Laborum aliquip nostrud eiusmod magna consectetur ullamco occaecat Lorem reprehenderit. Eiusmod irure consectetur non eiusmod dolore labore ad aliquip cillum.",
+          "spans": []
+        }
+      ],
+      "mainImage": {
+        "dimensions": {
+          "width": 600,
+          "height": 600
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=600&h=600&fit=crop"
+      }
+    }
+  }
+]
