@@ -1,0 +1,22 @@
+{
+  "id": "e51b9a47-e476-42f2-97f3-78482ac178ee",
+  "uid": "aut-excepturi-in",
+  "type": "project",
+  "data": {
+    "title": "harness clicks-and-mortar synergies",
+    "subtitle": "enable granular blockchains",
+    "image": {
+      "dimensions": {
+        "width": 1200,
+        "height": 700
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1200&h=700&fit=crop"
+    },
+    "websiteUrl": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    }
+  }
+}

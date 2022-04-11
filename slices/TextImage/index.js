@@ -5,38 +5,40 @@ import Image from "next/image";
 const TextImage = ({ slice }) => {
   return (
   <section className={slice.variation}>
-    <div className="textImageContent">
-      <span className="title">
+    <div className="container">
+      <div className="textImageContent">
+        <span className="title">
+          {
+            slice.primary.title ?
+            <PrismicRichText field={slice.primary.title}/>
+            : <h2>Template slice, update me!</h2>
+          }
+        </span>
         {
-          slice.primary.title ?
-          <PrismicRichText field={slice.primary.title}/>
-          : <h2>Template slice, update me!</h2>
+          slice.primary.description ?
+          <PrismicRichText field={slice.primary.description}/>
+          : <p>start by editing this slice from inside Slice Machine!</p>
         }
-      </span>
-      {
-        slice.primary.description ?
-        <PrismicRichText field={slice.primary.description}/>
-        : <p>start by editing this slice from inside Slice Machine!</p>
-      }
+      </div>
+      <div className="textImageImage">
+        <Image
+          src={slice.primary.mainImage.url}
+          alt={slice.primary.mainImage.alt}
+          layout="responsive"
+          width={slice.primary.mainImage.dimensions.width}
+          height={slice.primary.mainImage.dimensions.height}
+          objectfit="contain"
+          className="object-contain"
+        />
+      </div>
     </div>
-    <div className="textImageImage">
-      <Image
-        src={slice.primary.mainImage.url}
-        alt={slice.primary.mainImage.alt}
-        layout="responsive"
-        width={slice.primary.mainImage.dimensions.width}
-        height={slice.primary.mainImage.dimensions.height}
-        objectfit="contain"
-        className="object-contain"
-      />
-    </div>
-
     <style jsx>{`
         section {
           
           margin: 4em auto;
         }
         .container {
+
           text-align: center;
           display: flex;
           gap: 2rem;
