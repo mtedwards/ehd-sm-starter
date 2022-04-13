@@ -1,5 +1,5 @@
 @import "./settings.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 html,
 body {
   padding: 0;
@@ -9,13 +9,13 @@ body {
 }
 
 .site {
-  max-width: 1000px;
-  margin: 3rem auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 header {
-  text-align: center;
+  //text-align: center;
 }
 
 header h1 {

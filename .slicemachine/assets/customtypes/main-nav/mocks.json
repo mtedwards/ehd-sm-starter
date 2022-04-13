@@ -1,0 +1,37 @@
+{
+  "id": "dd3aee3b-891c-49ca-bc93-189a0da1f448",
+  "uid": "vel-ea-veritatis",
+  "type": "main-nav",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Cultivate granular synergies",
+        "spans": []
+      }
+    ],
+    "menuLinks": [
+      {
+        "Label": "scale cross-platform solutions",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "Label": "syndicate integrated paradigms",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "Label": "disintermediate robust action-items",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ]
+  }
+}

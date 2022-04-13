@@ -17,7 +17,15 @@
       }
     },
     "homepage": {},
-    "project": {}
+    "project": {},
+    "main-nav": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "TextBlock": {

@@ -1,0 +1,42 @@
+{
+  "id": "main-nav",
+  "label": "Main Nav",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "Site Main Title",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "menuLinks": {
+        "type": "Group",
+        "config": {
+          "label": "Menu Links",
+          "fields": {
+            "Label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

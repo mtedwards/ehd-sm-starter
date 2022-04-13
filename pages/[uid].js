@@ -5,37 +5,31 @@ import * as prismicH from "@prismicio/helpers";
 
 import { createClient, linkResolver } from "../prismicio";
 import { components } from "../slices";
-//import { Layout } from "../components/Layout";
-import Head from 'next/head'
+import Layout from "../components/Layout";
 
-export default function Page({ page }) {
+
+export default function Page({ page, menu }) {
   return (
-    
-    <div className="site">
-      <Head>
-        <title>My SliceZon Text</title>
-        <meta name="description" content="Just experimenting to see how fast it is"></meta>
-      </Head>
+    <Layout menu={menu} >
       <header>
-        <h1>{page.data.title.text}</h1>
+        <h1>{page.data.title[0].text}</h1>
       </header>
       <SliceZone
         slices={page.data.slices}
         components={components}
       />
       {/* <pre>{JSON.stringify(page,null,2)}</pre> */}
-    </div>
-
+    </Layout>
   )
 }
 
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
-
+  const menu = await client.getSingle("main-nav");
   const page = await client.getByUID('page', params.uid)
 
   return {
-    props: { page },
+    props: { page, menu },
   }
 }
 
