@@ -133,6 +133,92 @@
           }
         }
       },
+      "project_list": {
+        "library": "slices",
+        "id": "project_list",
+        "name": "ProjectList",
+        "description": "ProjectList",
+        "model": {
+          "id": "project_list",
+          "type": "SharedSlice",
+          "name": "ProjectList",
+          "description": "ProjectList",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ProjectList",
+              "primary": {},
+              "items": {
+                "project": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Project",
+                    "select": "document",
+                    "customtypes": [
+                      "project"
+                    ]
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "project_list",
+            "items": [
+              {
+                "project": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "project": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              },
+              {
+                "project": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "project": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "project": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "project": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "text_block": {
         "library": "slices",
         "id": "text_block",

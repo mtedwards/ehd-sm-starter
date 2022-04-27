@@ -18,7 +18,7 @@ export default function Page({ page, menu }) {
         slices={page.data.slices}
         components={components}
       />
-      {/* <pre>{JSON.stringify(page,null,2)}</pre> */}
+      
     </Layout>
   )
 }
@@ -26,7 +26,13 @@ export default function Page({ page, menu }) {
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
   const menu = await client.getSingle("main-nav");
-  const page = await client.getByUID('page', params.uid)
+  const page = await client.getByUID('page', params.uid, {
+		fetchLinks: [
+      'project.title',
+      'project.subtitle',
+      'project.image',
+    ]
+	});
 
   return {
     props: { page, menu },

@@ -34,6 +34,9 @@
             },
             "text_image": {
               "type": "SharedSlice"
+            },
+            "project_list": {
+              "type": "SharedSlice"
             }
           }
         }

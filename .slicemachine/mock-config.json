@@ -25,7 +25,8 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "page": {}
   },
   "slices": {
     "TextBlock": {
@@ -44,6 +45,12 @@
             }
           }
         }
+      }
+    },
+    "ProjectList": {
+      "default": {
+        "primary": {},
+        "items": {}
       }
     }
   }

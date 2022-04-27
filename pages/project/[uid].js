@@ -5,20 +5,14 @@ import Image from "next/image";
 
 import { createClient, linkResolver } from "../../prismicio";
 import { components } from "../../slices";
-//import { Layout } from "../components/Layout";
-import Head from 'next/head'
+import  Layout  from "../../components/Layout";
 
-export default function Page({ project }) {
+export default function Page({ project, menu }) {
   const {title, subtitle, image, websiteUrl, slices} = project.data;
   return (
     
-    <div className="site">
-      {/* <pre>{JSON.stringify(project,null,2)}</pre> */}
-      <Head>
-        <title>My SliceZon Text</title>
-        <meta name="description" content="Just experimenting to see how fast it is"></meta>
-      </Head>
-      <header>
+    <Layout menu={menu}>
+      <div>
         <h1>{title}</h1>
         <h3>{subtitle}</h3>
         <Image
@@ -32,23 +26,23 @@ export default function Page({ project }) {
           <p><PrismicLink  field={websiteUrl}>Visit the Website →</PrismicLink></p>
         }
 
-      </header>
+      </div>
       <SliceZone
         slices={slices}
         components={components}
       />
-    </div>
+    </Layout>
 
   )
 }
 
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
-
+  const menu = await client.getSingle("main-nav");
   const project = await client.getByUID("project", params.uid);
 
   return {
-    props: { project },
+    props: { project, menu },
   }
 }
 
